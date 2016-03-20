@@ -1,0 +1,96 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  border: 0;
+}
+
+body{
+  background-color: #DCDBDB;
+  font-family: "Helvetica", Arial, Serif;
+}
+
+h1 {
+  margin-top: 2%;
+  text-align: center;
+  text-shadow: 2px 2px 10px #4F4F4F;
+  font-style: italic;
+  font-size: 1.7em; /*170% font size in this page*/
+}
+
+section.box{
+  float:left;
+  position: relative;
+  padding: 20px 10px 10px 10px;  
+  border: 2px solid black;
+  margin: 2% 3%;
+  color:#525151;
+  background-color: #FFFFFF;
+  font-size: 1em; /*100% font size in this page*/
+}
+
+section > section{
+  position: absolute;
+  right: -2px;
+  top:-2px;
+  border: 2px solid black;
+  padding: 3px 20px 3px 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #4F4F4F;
+  font-size: 1.25em; /*125% font size in this page*/
+
+}
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    
+  }
+
+  .box:nth-child(3n){ /*Just making everything central with equal spacing*/
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .col-lg-4 {
+    width: 29.33%; /*not 33.33% to simulate margins just like the professor*/
+  }
+}
+
+/********* Medium devices only *********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  }
+
+  .col-md-6 {
+    width: 45.5%; /*not 50% to simulate margins just like the professor*/
+  }
+
+  .col-md-12 { /*not 100% to simulate margins just like the professor*/
+    width: 94%;
+  }
+
+.box:nth-child(3){ /*Just making everything central with equal spacing*/
+    margin-left: 0; /*taking margin off centre piece*/
+  }
+
+.box:nth-child(4){
+  margin-top: 0;
+  }
+}
+
+/********* Small devices only *********/
+@media(max-width: 767px) {
+  .col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12 {
+  }
+
+  .col-s-12 {
+    width: 90%; /*not 100% to simulate margins just like the professor*/
+  }
+
+  section.box{
+    margin: 2% 5%;
+  }
+}
