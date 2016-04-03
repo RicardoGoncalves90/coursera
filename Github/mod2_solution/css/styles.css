@@ -45,9 +45,6 @@ section > section{
 
 /********** Desktop devices only **********/
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    
-  }
 
   .box:nth-child(3n){ /*Just making everything central with equal spacing*/
     margin-left: 0;
@@ -61,9 +58,7 @@ section > section{
 
 /********* Medium devices only *********/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-  }
-
+  
   .col-md-6 {
     width: 45.5%; /*not 50% to simulate margins just like the professor*/
   }
@@ -83,8 +78,6 @@ section > section{
 
 /********* Small devices only *********/
 @media(max-width: 767px) {
-  .col-s-1, .col-s-2, .col-s-3, .col-s-4, .col-s-5, .col-s-6, .col-s-7, .col-s-8, .col-s-9, .col-s-10, .col-s-11, .col-s-12 {
-  }
 
   .col-s-12 {
     width: 90%; /*not 100% to simulate margins just like the professor*/
